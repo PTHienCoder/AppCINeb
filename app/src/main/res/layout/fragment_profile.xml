@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:ignore="MissingPrefix"
+    tools:context=".Fragment.ProfileFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbarId="@+id/toolbar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/ColorXamnhe"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                        android:id="@+id/avatar_useruc"
+                        android:src="@drawable/ic_face"
+                        android:layout_width="100dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="100dp"
+                        />
+                    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                        android:id="@+id/notiOnline"
+                        android:src="@drawable/ic_add"
+                        android:elevation="30dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="80dp"/>
+
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="PT Hien"
+                    android:fontFamily="@font/cabin"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+                >
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/hrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Following"
+                        android:fontFamily="@font/poppinslight"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Follower"
+                        android:fontFamily="@font/poppinslight"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Saved"
+                        android:fontFamily="@font/poppinslight"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/hrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvfollowing"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="30"
+                        android:fontFamily="@font/poppinslight"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/tvfollower"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="3054"
+                        android:fontFamily="@font/poppinslight"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/tvsaved"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="106"
+                        android:fontFamily="@font/poppinslight"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/btn_eidt"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:paddingBottom="10dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:layout_marginStart="120dp"-->
+<!--                    android:layout_marginEnd="120dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:text="Edit Profile"-->
+<!--                    android:background="@drawable/skip_button"/>-->
+                <TextView
+                android:id="@+id/addtieusu"
+                android:drawableLeft="@drawable/ic_addd"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:textSize="11dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="add story"
+                android:background="#D6D5D4"/>
+                <TextView
+                    android:id="@+id/addgiohang"
+                    android:drawableLeft="@drawable/ic_cart"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="16dp"
+                    android:layout_width="80dp"
+                    android:textColor="#fd8700"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Cart"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/skip_button1"/>
+
+            </LinearLayout>
+
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:elevation="15dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:layout_gravity="top"-->
+<!--                app:layout_collapseMode="pin"-->
+<!--                android:background="@color/white"-->
+<!--                tools:ignore="MissingPrefix">-->
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                        <TextView-->
+<!--                            android:layout_marginStart="120dp"-->
+<!--                            android:layout_marginEnd="135dp"-->
+<!--                            android:textSize="18dp"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:textColor="#171716"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:text="Profile"-->
+<!--                            android:paddingLeft="10dp"-->
+<!--                            android:paddingRight="10dp"/>-->
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/searchicon"-->
+<!--                            android:layout_marginRight="25dp"-->
+<!--                            android:src="@drawable/ic_addusser"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:background="@color/white"-->
+<!--                            android:layout_height="wrap_content"/>-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/mesicon"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginRight="22dp"-->
+<!--                        android:background="@color/white"-->
+<!--                        android:src="@drawable/ic_menuuu" />-->
+<!--                </RelativeLayout>-->
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:scrollbars="vertical"
+            app:tabTextColor="@color/black"
+            android:id="@+id/tab"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:id="@+id/main_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:context=".Fragment.ProfileFragment">-->
+
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:id="@+id/appbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:background="#FFFFFF"-->
+<!--                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--                app:layout_scrollFlags="scroll|enterAlways|snap"-->
+<!--                app:title="">-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView1"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:layout_marginLeft="8dp"-->
+<!--                    android:layout_marginRight="4dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:textSize="17dp"-->
+<!--                    android:text="Notification"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:elevation="15dp"-->
+<!--                    android:fontFamily="@font/poppinslight"-->
+<!--                    tools:ignore="UnknownId"-->
+<!--                    />-->
+
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:id="@+id/nestedsv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:fillViewport="false"-->
+<!--            android:fitsSystemWindows="true"-->
+<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#F6F3F3">-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginLeft="8dp"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:background="#D4D6D6" />-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/rcvusseronline"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/textView2"-->
+<!--                    android:layout_marginTop="8dp">-->
+
+<!--                </androidx.recyclerview.widget.RecyclerView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_below="@+id/rcvusseronline"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginLeft="8dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:background="#D4D6D6" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_below="@+id/textView3"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView5"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:layout_marginRight="4dp"-->
+<!--                        android:elevation="15dp"-->
+<!--                        android:fontFamily="@font/poppinslight"-->
+<!--                        android:text="New Activity"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="14dp"-->
+<!--                        tools:ignore="UnknownId" />-->
+
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:id="@+id/rcvnotifi"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/textView2"-->
+<!--                        android:layout_marginTop="8dp">-->
+
+<!--                    </androidx.recyclerview.widget.RecyclerView>-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </RelativeLayout>-->
+<!--        </androidx.core.widget.NestedScrollView>-->
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->

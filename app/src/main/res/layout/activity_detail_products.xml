@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_Products_Activity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobarchat"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/AppTheme">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left">
+            <ImageButton
+                android:id="@+id/backc"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                app:cardBackgroundColor="#D10000"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="67dp"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/tv_Qty_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageButton
+                android:id="@+id/btn_cart"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="80dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_cart"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/search_icon"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_search"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toobarchat"
+        android:layout_marginBottom="70dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1F1F1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/image_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imag_test"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/name_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Tìm Kiếm Hàng Đầu"
+                    android:textColor="#070707"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_price_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_pro"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Xem Thêm"
+                    android:textColor="#FF4207"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+
+                    <LinearLayout
+                        android:layout_margin="3dp"
+                        android:layout_below="@id/tv_price_pro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_soSao"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/cabin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.5/5"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="2dp"/>
+                        <ImageView
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tv_daban"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppinslight"
+                            android:gravity="left"
+                            android:text="| 15"
+                            android:textColor="#403E3E"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+                <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                    android:id="@+id/image_shop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_face"/>
+                <TextView
+                    android:id="@+id/tv_nameshop"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Gợi Ý Hôm Nay"
+                    android:textColor="#131313"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_address_shop"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_below="@id/tv_nameshop"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Gợi Ý Hôm Nay"
+                    android:textColor="#333333"
+                    android:textSize="9dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_xemShop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/skip_button1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:padding="5dp"
+                    android:text="Xem Shop"
+                    android:textColor="#FF4207"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+                <TextView
+                    android:id="@+id/chitiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Chi tiết sản phẩm"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_xemchitiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Xem tất cả >"
+                    android:textColor="#FF4207"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+                <TextView
+                    android:id="@+id/tv22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Mô tả sản phẩm"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_xemmota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Xem tất cả >"
+                    android:textColor="#FF4207"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin ="8dp"
+                    android:layout_below="@id/tv22"
+                    android:id="@+id/Webview_Mota"
+                    tools:ignore="WebViewLayout">
+                </WebView>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+                <TextView
+                    android:id="@+id/rv_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Đánh giá sản phẩm"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_xemRview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="left"
+                    android:text="Xem tất cả >"
+                    android:textColor="#FF4207"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/rv_tv"
+                    android:id="@+id/rcv_review_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/chat_shop"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF">
+            <ImageButton
+                android:id="@+id/iconchat"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_message"
+                android:layout_width="50dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="10dp"
+                android:text="Nhắn tin"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsmedium" />
+
+        </LinearLayout>
+
+        <Button
+            android:textSize="11dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:id="@+id/btn_add_toCart"
+            android:textColor="#fd8700"
+            android:text="Thêm vào Giỏ hàng "
+            android:background="@drawable/skip_button1" />
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:layout_height="55dp"
+            android:id="@+id/btn_buy"
+            android:text="Mua "
+            android:background="@drawable/skip_button" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

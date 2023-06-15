@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottom_review_pro"
+    android:background="@drawable/bottom_sheet1"
+    android:padding="15dp">
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/RadioButton5"
+            android:fontFamily="@font/cabin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:drawableRight="@drawable/ic_star_sm"
+            android:text="5"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:background="@drawable/skip_button1"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/RadioButton4"
+            android:fontFamily="@font/cabin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:drawableRight="@drawable/ic_star_sm"
+            android:text="4"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:background="@drawable/skip_button1"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/RadioButton3"
+            android:fontFamily="@font/cabin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:drawableRight="@drawable/ic_star_sm"
+            android:text="3"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:background="@drawable/skip_button1"
+            android:textColor="@color/black"/>
+
+
+            <RadioButton
+                android:id="@+id/RadioButton2"
+                android:fontFamily="@font/cabin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:drawableRight="@drawable/ic_star_sm"
+                android:text="2"
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:background="@drawable/skip_button1"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/RadioButton1"
+                android:fontFamily="@font/cabin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:drawableRight="@drawable/ic_star_sm"
+                android:text="1"
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:background="@drawable/skip_button1"
+                android:textColor="@color/black"/>
+
+
+
+    </RadioGroup>
+
+    <EditText
+        android:fontFamily="@font/cabin"
+        android:id="@+id/ed_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/skip_button1"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/themeColor"
+        android:hint="Hãy nhận xét về sản phẩm. "
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="35dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="@font/cabin"
+            android:background="#0966C0"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btn_submit_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:layout_alignParentBottom="true"
+            android:text="Gửi đánh giá"
+            android:paddingTop="10dp"
+            android:paddingLeft="35dp"
+            android:inputType="textEmailAddress"
+            android:paddingRight="35dp"
+            android:paddingBottom="10dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

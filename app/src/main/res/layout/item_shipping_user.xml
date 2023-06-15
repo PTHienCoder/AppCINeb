@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lu_ship"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:paddingBottom="0dp"
+    android:background="#FFFFFF">
+    <CheckBox
+        android:id="@+id/checkBoxxx"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/image_shop"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/ic_place"/>
+    <TextView
+        android:id="@+id/tv_nameship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppinslight"
+        android:gravity="left"
+        android:text="Gợi Ý Hôm Nay"
+        android:textColor="#131313"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_phone_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/tv_nameship"
+        android:layout_weight="1"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/poppinslight"
+        android:gravity="left"
+        android:text="Gợi Ý Hôm Nay"
+        android:textColor="#333333"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_address_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/tv_phone_ship"
+        android:layout_weight="1"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/poppinslight"
+        android:gravity="left"
+        android:text="Gợi Ý Hôm Nay"
+        android:textColor="#333333"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_clear"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppinslight"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="#FF4207"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF4207"
+        android:layout_below="@id/tv_address_ship"
+        android:layout_margin="10dp"
+        android:textColor="#FF4207"
+        android:textStyle="bold" />
+
+</RelativeLayout>
